@@ -3,10 +3,12 @@ import { supabase } from "../supabase/client";
 import { useNavigate } from "react-router-dom";
 import { LoginGoogle } from "./LoginGoogle";
 import { LoginFB } from "./LoginFB";
+import { LoginGithub } from "./LoginGitHub";
 
 import FaceIcon from '@mui/icons-material/Face';
 import GoogleIcon from '@mui/icons-material/Google';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 
 export function Login() {
@@ -64,6 +66,9 @@ export function Login() {
 
         <button onClick={LoginFB} className="col-md-4 offset-md-4 mt-4 btn btn-primary">
         <FacebookIcon/> Login with FaceBook</button>
+
+        <button onClick={LoginGithub} className="col-md-4 offset-md-4 mt-4 btn btn-dark">
+        <GitHubIcon/> Login with GitHub</button>
       </div>
 
       

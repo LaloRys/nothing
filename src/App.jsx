@@ -18,7 +18,7 @@ function App() {
         console.log("App Desconectado",session, event)
       } else {
         navigate("/");
-        // console.log("App Conectado",session, event)
+        console.log("App Conectado",session, event)
       }
     })
 
@@ -29,11 +29,11 @@ function App() {
     <div className="App">
       <TaskContextProvider>
         <Navbar/>
+
         <div className="container">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Login" element={<Login />} />
-          <Route path="*" element={<NotFound />} />
         </Routes>
         </div>
       </TaskContextProvider>
